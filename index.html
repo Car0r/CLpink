@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f7c6d4">
+<title>CL Pink | Moda Feminina</title>
+<style>
+:root{--pink:#e66b91;--pink2:#fbe7ed;--deep:#7f2447;--ink:#51283a;--muted:#936878;--white:#fff;--line:#f1d3dd}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#fffdfd;color:var(--ink);font-family:Arial,Helvetica,sans-serif}
+a{color:inherit;text-decoration:none}button,input,select{font:inherit}
+.topbar{background:#fbe4eb;color:#7f3a54;padding:9px 4%;font-size:12px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+header{background:#fff;position:sticky;top:0;z-index:10;box-shadow:0 3px 16px #8e3b5710}
+.nav{max-width:1200px;margin:auto;padding:17px 4%;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.brand{text-align:center;line-height:1;min-width:160px}.brand strong{display:block;font-family:Georgia,serif;font-weight:normal;font-size:clamp(28px,4vw,42px);letter-spacing:2px;color:var(--pink)}.brand small{font-size:10px;letter-spacing:3px;color:var(--muted)}.brand em{display:block;font-family:Georgia,serif;font-style:italic;font-size:12px;margin-top:5px;color:var(--deep)}
+.search{max-width:250px;width:100%;border:1px solid var(--line);border-radius:30px;padding:11px 15px;outline:none}.navlinks{display:flex;align-items:center;gap:18px;font-size:13px;color:var(--deep)}.navlinks a:hover{color:var(--pink)}
+.hero{max-width:1400px;margin:auto;position:relative;overflow:hidden;background:#fce8ee}.hero img{display:block;width:100%;height:auto;max-height:560px;object-fit:cover;object-position:center}
+.hero-copy{position:absolute;left:7%;top:15%;max-width:39%;}.eyebrow{letter-spacing:4px;font-size:12px;color:#b14c70;font-weight:bold}.hero h1{font-family:Georgia,serif;font-size:clamp(28px,4vw,55px);font-weight:normal;line-height:1.08;color:#742943;margin:12px 0}.hero h1 em{color:var(--pink)}.hero p{line-height:1.5;font-size:clamp(13px,1.4vw,17px);max-width:390px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--pink);color:white;padding:13px 22px;border:0;border-radius:28px;cursor:pointer;font-weight:bold;transition:.2s}.btn:hover{background:#c94c78;transform:translateY(-1px)}.btn.small{padding:10px 12px;border-radius:9px;width:100%;font-size:13px}
+.trust{display:flex;gap:18px;flex-wrap:wrap;font-size:11px;color:#8f5168;margin-top:24px}.trust span{border-right:1px solid #e8b7c7;padding-right:15px}.trust span:last-child{border:0}
+.categories{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;padding:22px 4%;background:#fff7fa;border-bottom:1px solid #fae7ed}.cat{border:1px solid transparent;background:transparent;cursor:pointer;padding:10px 15px;border-radius:24px;color:var(--deep);font-size:13px}.cat:hover,.cat.active{background:#f9dce6;border-color:#f3c0d0}
+.section{max-width:1200px;margin:0 auto;padding:44px 4%}.section-title{text-align:center;font-family:Georgia,serif;font-style:italic;font-size:clamp(24px,3vw,34px);font-weight:normal;color:#8c3154;margin:0 0 8px}.section-sub{text-align:center;color:var(--muted);font-size:13px;margin:0 0 28px}
+.tools{display:flex;gap:10px;justify-content:space-between;align-items:center;flex-wrap:wrap;margin:0 0 20px}.tools input,.tools select{border:1px solid var(--line);border-radius:10px;padding:10px 12px;background:white;color:var(--ink)}.tools input{flex:1;min-width:180px;max-width:360px}
+.products{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}.product{border:1px solid #f4e0e7;border-radius:14px;overflow:hidden;background:#fff;box-shadow:0 5px 20px #8e3b5708;transition:.2s}.product:hover{transform:translateY(-4px);box-shadow:0 10px 25px #8e3b5718}.product img{width:100%;aspect-ratio:4/4.5;object-fit:cover;background:var(--pink2);display:block}.photo-placeholder{display:flex;align-items:center;justify-content:center;aspect-ratio:4/4.5;background:linear-gradient(145deg,#fff1f5,#f4cbd8);font-size:52px;color:#d97b9a}.prod-info{padding:13px}.tag{display:inline-block;font-size:10px;background:#ffe6ee;color:#a63d64;padding:5px 8px;border-radius:12px;margin-bottom:7px}.product h3{font-size:15px;margin:0 0 7px}.price{color:#a82d5b;font-weight:bold;font-size:17px}.old-price{font-size:12px;color:#aa8d98;text-decoration:line-through;margin-left:5px}.sizes{font-size:11px;color:#987181;margin:10px 0}.size-pills{display:flex;gap:5px;margin-top:6px}.size{border:1px solid #f0d5df;border-radius:7px;padding:5px 8px;font-size:11px;background:white;cursor:pointer}.size.selected{background:var(--pink);color:white;border-color:var(--pink)}
+.banner{max-width:1120px;margin:0 auto 42px;background:linear-gradient(110deg,#f9d5e1,#fff0f5);border-radius:18px;padding:30px 5%;display:flex;align-items:center;justify-content:space-between;gap:24px}.banner h2{font-family:Georgia,serif;font-weight:normal;font-style:italic;font-size:clamp(24px,3vw,36px);margin:0 0 8px;color:#8c3154}.banner p{margin:0 0 16px}.benefits{display:flex;gap:18px;font-size:12px;color:#85435c;flex-wrap:wrap}
+footer{background:#fff2f6;border-top:1px solid #f2d5df;padding:35px 5%;text-align:center;color:#87566a}footer .brand{margin-bottom:15px}footer p{font-size:12px;line-height:1.7}.footlinks{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;font-size:12px}
+.whats-float{position:fixed;bottom:20px;right:20px;background:#25d366;color:#fff;border-radius:50%;width:58px;height:58px;display:grid;place-items:center;font-size:27px;box-shadow:0 4px 15px #0002;z-index:20}
+.notice{max-width:1200px;margin:0 auto;padding:0 4%;font-size:11px;color:#a08490}
+@media(max-width:900px){.products{grid-template-columns:repeat(2,minmax(0,1fr))}.hero-copy{top:9%;max-width:43%}.hero-copy h1{font-size:clamp(23px,4vw,38px)}.trust{display:none}.navlinks{gap:10px}.search{max-width:180px}}
+@media(max-width:600px){.topbar{justify-content:center;text-align:center;font-size:11px}.nav{padding:12px 4%;flex-wrap:wrap;justify-content:center;gap:10px}.brand{order:0;width:100%}.search{order:1;max-width:none;flex:1}.navlinks{order:2;font-size:12px}.hero img{min-height:370px;object-fit:cover;object-position:58% center;opacity:.55}.hero-copy{left:7%;top:11%;max-width:84%;right:5%}.hero-copy h1{font-size:37px}.hero-copy p{max-width:300px}.categories{justify-content:flex-start;flex-wrap:nowrap;overflow:auto;padding:13px 4%}.cat{white-space:nowrap}.section{padding:32px 4%}.products{gap:11px}.prod-info{padding:10px}.product h3{font-size:13px}.price{font-size:15px}.banner{margin:0 4% 30px;padding:24px;display:block}.banner .btn{margin-top:5px}.benefits{margin-top:20px}.tools{align-items:stretch}.tools input{max-width:none;width:100%}.tools select{flex:1}.whats-float{width:52px;height:52px;right:13px;bottom:13px}}
+</style>
+</head>
+<body>
+<div class="topbar"><span>♡ Peças escolhidas com carinho</span><span>✧ Novidades para você se apaixonar</span><span>☏ Atendimento pelo WhatsApp</span></div>
+<header><div class="nav">
+<input id="search" class="search" placeholder="⌕  O que você procura?" aria-label="Buscar produtos">
+<a class="brand" href="#" aria-label="CL Pink página inicial"><strong>CL PINK</strong><small>MODA FEMININA</small><em>Seu estilo, sua exclusividade.</em></a>
+<nav class="navlinks"><a href="#produtos">♡ Favoritos</a><a href="#contato">☏ Fale com a loja</a></nav>
+</div></header>
+<main>
+<section class="hero">
+<img src="cl-pink-banner.png" alt="Editorial de moda feminina em tons de rosa da CL Pink">
+<div class="hero-copy"><div class="eyebrow">MODA FEMININA</div><h1>Looks que realçam o que te faz <em>única!</em></h1><p>Cropped, corsets, conjuntos e muito mais. Peças especiais para mulheres reais.</p><a class="btn" id="heroWhats" href="#" target="_blank" rel="noopener">☏ Comprar pelo WhatsApp</a><div class="trust"><span>♡ Peças selecionadas</span><span>✧ Atendimento especial</span></div></div>
+</section>
+<nav class="categories" aria-label="Categorias">
+<button class="cat active" data-cat="Todas">♡ Todas</button><button class="cat" data-cat="Cropped">Cropped</button><button class="cat" data-cat="Corset">Corsets</button><button class="cat" data-cat="Conjunto">Conjuntos</button><button class="cat" data-cat="Vestido">Vestidos</button><button class="cat" data-cat="Blusa">Blusas</button><button class="cat" data-cat="Calça">Calças</button><button class="cat" data-cat="Saia">Saias</button><button class="cat" data-cat="Short">Shorts</button>
+</nav>
+<section class="section" id="produtos">
+<h2 class="section-title">Destaques da semana</h2><p class="section-sub">Escolha suas peças favoritas 💗</p>
+<div class="tools"><input id="filterSearch" placeholder="Buscar por nome..."><select id="sort" aria-label="Ordenar produtos"><option value="featured">Ordenar: destaques</option><option value="low">Menor preço</option><option value="high">Maior preço</option></select></div>
+<div class="products" id="productGrid"></div>
+</section>
+<section class="banner" id="contato"><div><h2>Escolha suas peças favoritas</h2><p>Seu próximo look está te esperando!</p><a class="btn" id="bannerWhats" href="#" target="_blank" rel="noopener">☏ Falar com a CL Pink</a></div><div class="benefits"><span>♡ Atendimento rápido</span><span>✧ Tire suas dúvidas</span><span>⌂ Receba em casa</span></div></section>
+<p class="notice">* Preços, fotos, estoque e tamanhos desta demonstração são ilustrativos. Edite as informações antes de publicar.</p>
+</main>
+<footer><div class="brand"><strong>CL PINK</strong><small>MODA FEMININA</small><em>Seu estilo, sua exclusividade.</em></div><div class="footlinks"><a href="#produtos">Produtos</a><a href="#contato">Contato</a><a href="#" id="footerWhats">WhatsApp</a></div><p>Moda feminina feita para você se sentir linda.<br>© <span id="year"></span> CL Pink. Todos os direitos reservados.</p></footer>
+<a class="whats-float" id="floatWhats" href="#" target="_blank" rel="noopener" aria-label="Fale conosco pelo WhatsApp">☏</a>
+<script>
+/* CONFIGURE AQUI: troque pelo WhatsApp da loja com código do país e DDD, só números.
+   Exemplo fictício: 5511999999999 */
+const WHATSAPP_NUMBER = "5511999999999";
+const products = [
+ {id:1,name:"Corset Alfaiataria",category:"Corset",price:89.90,tag:"DESTAQUE",sizes:["P","M","G"],emoji:"🎀",color:"rosa"},
+ {id:2,name:"Conjunto Elegance",category:"Conjunto",price:159.90,tag:"LANÇAMENTO",sizes:["P","M","G"],emoji:"👚",color:"pink"},
+ {id:3,name:"Cropped Canelado",category:"Cropped",price:69.90,tag:"",sizes:["P","M","G","GG"],emoji:"🌸",color:"preto"},
+ {id:4,name:"Vestido Curto",category:"Vestido",price:129.90,tag:"MAIS VENDIDO",sizes:["P","M","G"],emoji:"👗",color:"rosa"},
+ {id:5,name:"Calça Alfaiataria",category:"Calça",price:119.90,tag:"",sizes:["P","M","G","GG"],emoji:"🤍",color:"creme"},
+ {id:6,name:"Blusa Romantic",category:"Blusa",price:59.90,tag:"",sizes:["P","M","G"],emoji:"🌷",color:"rosa"},
+ {id:7,name:"Saia Midi Delicada",category:"Saia",price:79.90,tag:"",sizes:["P","M","G"],emoji:"💗",color:"pink"},
+ {id:8,name:"Shorts Moderno",category:"Short",price:74.90,tag:"",sizes:["P","M","G","GG"],emoji:"🩷",color:"rosa"}
+];
+let activeCategory="Todas", selectedSizes={};
+const money=n=>n.toLocaleString("pt-BR",{style:"currency",currency:"BRL"});
+function whatsUrl(message){return "https://wa.me/"+WHATSAPP_NUMBER+"?text="+encodeURIComponent(message)}
+function setWhatsLinks(){const msg="Olá! Vim pelo site da CL Pink e gostaria de conhecer as peças.";["heroWhats","bannerWhats","floatWhats","footerWhats"].forEach(id=>document.getElementById(id).href=whatsUrl(msg))}
+function render(){
+ const query=(document.getElementById("filterSearch").value||document.getElementById("search").value).trim().toLowerCase();
+ let list=products.filter(p=>(activeCategory==="Todas"||p.category===activeCategory)&&p.name.toLowerCase().includes(query));
+ const sort=document.getElementById("sort").value;if(sort==="low")list.sort((a,b)=>a.price-b.price);if(sort==="high")list.sort((a,b)=>b.price-a.price);
+ const grid=document.getElementById("productGrid");
+ if(!list.length){grid.innerHTML='<p>Nenhuma peça encontrada. Tente outra busca 💗</p>';return}
+ grid.innerHTML=list.map(p=>`<article class="product"><div class="photo-placeholder" aria-label="Foto ilustrativa de ${p.name}">${p.emoji}</div><div class="prod-info">${p.tag?`<span class="tag">${p.tag}</span>`:""}<h3>${p.name}</h3><div class="price">${money(p.price)}</div><div class="sizes">Tamanhos disponíveis<div class="size-pills">${p.sizes.map(s=>`<button class="size ${selectedSizes[p.id]===s?"selected":""}" data-size="${s}" data-id="${p.id}">${s}</button>`).join("")}</div></div><button class="btn small" data-buy="${p.id}">☏ Ver detalhes</button></div></article>`).join("");
+ grid.querySelectorAll("[data-size]").forEach(b=>b.addEventListener("click",()=>{selectedSizes[b.dataset.id]=b.dataset.size;render()}));
+ grid.querySelectorAll("[data-buy]").forEach(b=>b.addEventListener("click",()=>{const p=products.find(x=>x.id==b.dataset.buy);const size=selectedSizes[p.id]||"a confirmar";window.open(whatsUrl(`Olá! Tenho interesse em ${p.name}, no valor de ${money(p.price)}. Tamanho: ${size}. Está disponível?`),"_blank","noopener")}));
+}
+document.querySelectorAll(".cat").forEach(b=>b.addEventListener("click",()=>{activeCategory=b.dataset.cat;document.querySelectorAll(".cat").forEach(x=>x.classList.toggle("active",x===b));render()}));
+document.getElementById("filterSearch").addEventListener("input",()=>{document.getElementById("search").value=document.getElementById("filterSearch").value;render()});
+document.getElementById("search").addEventListener("input",()=>{document.getElementById("filterSearch").value=document.getElementById("search").value;render();document.getElementById("produtos").scrollIntoView({behavior:"smooth",block:"start"})});
+document.getElementById("sort").addEventListener("change",render);
+document.getElementById("year").textContent=new Date().getFullYear();
+setWhatsLinks();render();
+</script>
+</body></html>
